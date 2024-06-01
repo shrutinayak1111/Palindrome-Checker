@@ -1,0 +1,13 @@
+
+button{
+    border-radius: 12px;
+    border: 2px black solid;
+    padding: 12px 12px 12px 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #000;
+    color: white;
+    
+}
+button:hover{
+    color: purple;
+}

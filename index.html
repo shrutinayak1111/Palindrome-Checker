@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designedby ShrutiN.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h2>Palindrome Checker</h2>
+    <button onclick="palindrome()">click here to enter your word</button>
+    <p id="demo"></p>
+</div>
+   <script>
+   function palindrome(){
+    let string=prompt("enter your word ");
+    
+    let removeChar = string.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+    let checkpalindrome = removeChar.split('').reverse().join('');
+    
+    if(removeChar != checkpalindrome){
+        document.getElementById("demo").innerHTML=string+" is NOT a palindrome";
+      
+    } else{
+       
+        document.getElementById("demo").innerHTML=string+" is a palindrome";
+        }
+    }
+    </script>
+</body>
+</html>
